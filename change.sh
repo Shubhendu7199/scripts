@@ -64,3 +64,6 @@ do
     sudo sed -i 's/timestamp/'$time'/' terraform.tfvars
   fi   
 done
+terraform init
+terraform plan
+terraform apply --auto-approve
